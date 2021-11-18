@@ -1,16 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { styled } from "./config/styles/themeToken/themeToken";
 
+// style section
 import "./config/styles/reset.css";
+import "./config/styles/basicTheme.css";
+import { styled } from "./config/styles/themeToken/themeToken";
+import { App } from "./modules/app/app";
 
-const AppWrapper = styled("div", {
-  backgroundColor: `$purple1`,
-});
+// modules section
+
+const AppWrapper = styled("div", {});
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppWrapper>hey</AppWrapper>
+    <AppWrapper>
+      <App />
+    </AppWrapper>
   </React.StrictMode>,
   document.getElementById("root")
 );

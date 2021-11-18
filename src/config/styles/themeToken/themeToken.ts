@@ -17,10 +17,11 @@ export const { styled, theme } = createStitches({
       2: "1.5rem",
       3: "2rem",
     },
-    fonts: {
-      untitled: "apple-system",
+    fontWeights: {
+      1: 300,
+      2: 500,
+      3: 600,
     },
-    fontWeights: {},
     lineHeights: {},
     letterSpacings: {},
     sizes: {},

@@ -7,8 +7,6 @@ import "./config/styles/basicTheme.css";
 import { styled } from "./config/styles/themeToken/themeToken";
 import { App } from "./modules/app/app";
 
-// modules section
-
 const AppWrapper = styled("div", {});
 
 ReactDOM.render(

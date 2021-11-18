@@ -1,11 +1,12 @@
 import { createStitches } from "@stitches/react";
 
-import { purpleDark } from "@radix-ui/colors";
+import { purpleDark, violetDark } from "@radix-ui/colors";
 
 export const { styled, theme } = createStitches({
   theme: {
     colors: {
       ...purpleDark,
+      ...violetDark,
     },
     space: {
       1: "0.5em",
@@ -16,6 +17,8 @@ export const { styled, theme } = createStitches({
       1: "1rem",
       2: "1.5rem",
       3: "2rem",
+      4: "3rem",
+      5: "4rem",
     },
     fontWeights: {
       1: 300,
@@ -24,10 +27,16 @@ export const { styled, theme } = createStitches({
     },
     lineHeights: {},
     letterSpacings: {},
-    sizes: {},
+    sizes: {
+      maxHeadingParagraph: "600px",
+      maxHeadingText: "800px",
+      searchIcon: "2em",
+    },
     borderWidths: {},
     borderStyles: {},
-    radii: {},
+    radii: {
+      1: "0.2em",
+    },
     shadows: {},
     zIndices: {},
     transitions: {},
